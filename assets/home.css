@@ -1,0 +1,57 @@
+/*Style Home*/
+.container-motto{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    }
+    
+    .container-motto-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 10;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .container-motto-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    }
+    
+    .container-motto-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    }
+    
+    .container-motto-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%; /* 3 images */
+    height: 100%;
+    animation: slide 20s infinite;
+    }
+    
+    .container-motto-slide {
+    position: relative;
+    width: 33.33%; /* Each slide takes up 1/3 of the slider */
+    height: 100%;
+    float: left;
+    background-size: cover;
+    background-position: center;
+    }
+    
+    .container-motto-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Overlay to make text more readable */
+    }
