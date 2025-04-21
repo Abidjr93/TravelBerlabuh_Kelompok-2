@@ -1,5 +1,5 @@
+/* style.css - Main styles for Tourimo website clone */
 
-/*INI SYLING PENTING !!! JANGAN DI RUBAH - RUBAH*/
 /* Reset and Base Styles */
 * {
   margin: 0;
@@ -122,6 +122,20 @@ nav ul li a.active::after {
   background-color: #ff7e00;
 }
 
+.phone {
+  display: flex;
+  align-items: center;
+}
+
+.phone i {
+  color: #ff7e00;
+  margin-right: 8px;
+}
+
+.phone span {
+  font-weight: 500;
+}
+
 
 
 /* Style Footer */
@@ -228,6 +242,52 @@ footer {
 
 
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .search-form .form-group {
+      flex: 1 0 40%;
+      margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .container {
+      flex-direction: column;
+      padding: 15px;
+  }
+  
+  .logo {
+      margin-bottom: 15px;
+  }
+  
+  nav ul {
+      justify-content: center;
+      margin-bottom: 15px;
+  }
+  
+  nav ul li {
+      margin: 0 10px;
+  }
+  
+  .hero-content h1 {
+      font-size: 36px;
+  }
+  
+  .search-form {
+      padding: 20px;
+  }
+  
+  .search-form .form-group {
+      flex: 1 0 100%;
+  }
+
+  .container-motto-text h1 {
+      font-size: 2.5rem;
+  }
+  .container-motto-text p {
+      font-size: 1rem;
+  }
+}
 
 @media (max-width: 576px) {
   nav ul {
@@ -237,4 +297,13 @@ footer {
   nav ul li {
       margin: 5px 10px;
   }
-} 
+  
+  .section-title h2 {
+      font-size: 28px;
+  }
+  
+  .contact-form .form-row {
+      grid-template-columns: 1fr;
+      gap: 0;
+  }
+}
