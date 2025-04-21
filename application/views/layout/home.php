@@ -54,3 +54,41 @@
         <a href="destinasi.php" class="btn">View All Destinations</a>
     </div>
 </div>
+
+<div class="container">
+        <div class="section-title">
+            <h2>Kenapa Memilih kita</h2>
+            <p>Our commitment to excellence makes us stand out</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Worldwide Coverage</h3>
+                <p>We offer tours to over 100 countries across all continents</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>100% Secure Booking</h3>
+                <p>Your payments and personal information are always safe</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>24/7 Support</h3>
+                <p>Our customer service team is always ready to help</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-tag"></i>
+                </div>
+                <h3>Best Price Guarantee</h3>
+                <p>Find a lower price and we'll match it, guaranteed</p>
+            </div>
+        </div>
+    </div>
+</div>
