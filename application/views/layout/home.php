@@ -4,7 +4,7 @@
             <div class="hero-content">
                 <h1>Discover the World</h1>
                 <p>Explore amazing destinations with our curated travel experiences</p>
-                <a href="tours.php" class="btn">View Tours</a>
+                <a href="<?php echo base_url('destinasi');?>" class="btn">View Tours</a>
             </div>
         </div>
     </section>
