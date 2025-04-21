@@ -617,7 +617,7 @@ footer {
 
 /* About Page */
 .page-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-bg.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/.jpg');
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -751,6 +751,35 @@ footer {
   background-color: #ff7e00;
   color: #fff;
 }
+
+/* ini stylingku (rifky) */
+
+.testimoni-content {
+  display: flex;
+  grid-template-columns: 2fr 2fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.testimoni-text h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.testimoni-text p {
+  margin-bottom: 40px;
+  color: #666;
+  text-align: center;
+}
+
+.testimoni-section {
+  padding: 70px 0;
+  
+}
+
+/* ini akhirannya */
 
 /* Tours Page */
 .tours-filters {
