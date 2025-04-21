@@ -17,15 +17,15 @@
                 <ul>
                     <li><a href="<?php echo base_url('home'); ?> ">Home</a></li>
                     <li><a href="<?php echo base_url('about'); ?> ">About</a></li>
-                    <li><a href="tours.php">Tours</a></li>
-                    <li><a href="destinations.php">Destinations</a></li>
-                    <li><a href="blog.php">Blog</a></li>
-                    <li><a href="<?php echo base_url('contact'); ?>">Contact</a></li>
+                    <!--<li><a href="tours.php">Tours</a></li>-->
+                    <li><a href="<?php echo base_url('destinasi'); ?>">Destinations</a></li>
+                    <!--<li><a href="blog.php">Blog</a></li>
+                    <li><a href="<?php echo base_url('contact'); ?>">Contact</a></li>-->
                 </ul>
             </nav>
-            <div class="phone">
+            <!--<div class="phone">
                 <i class="fas fa-phone-alt"></i>
                 <span>082123456789</span>
-            </div>
+            </div>-->
         </div>
     </header>
