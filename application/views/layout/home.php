@@ -9,3 +9,86 @@
         <p>Explore amazing destinations with our curated travel experiences</p>
     </div>
 </div>
+
+<div class="container-home-destination">
+    <div class="container-home-destination-head">
+        <h2>Popular Destinations</h2>
+    </div>
+    <div class="container-home-destination-card">
+        <?php
+            $tours = [[
+                'id' => 1,
+                'title' => 'Gunung Bromo (Malang)',
+                'image' => 'bromo1.jpg',
+                'price' => 200.000,
+                ], [
+                'id' => 2,
+                'title' => 'Kawah Ijen (Banyuwangi)',
+                'image' => 'Ijen1.jpg',
+                'price' => 300.000,
+                ], [
+                'id' => 3,
+                'title' => 'Gunung Dieng (Wonosobo)',
+                'image' => 'Dieng1.jpg',
+                'price' => 500.000,
+                ],
+            ];
+
+            foreach ($tours as $tour) {
+                echo '<div class="home-destination-card">';
+                echo '<div class="home-destination-image">';
+                echo '<img src="assets/images/' . $tour['image'] . '" alt="' . $tour['title'] . '">';
+                echo '<div class="home-destination-price">' . $tour['price'] . '.000/People</div>';
+                echo '</div>';
+                echo '<div class="home-destination-content">';
+                echo '<h3>' . $tour['title'] . '</h3>';
+                echo '<div class="home-destination-meta">';
+                echo '</div>';
+                echo '<a href="destinasi-detail.php?id=' . $tour['id'] . '" class="btn-small">View Details</a>';
+                echo '</div>';
+                echo '</div>';
+            }
+        ?>
+    </div>
+    <div class="home-destination-button">
+        <a href="destinasi.php" class="btn">View All Destinations</a>
+    </div>
+</div>
+
+<div class="container">
+        <div class="section-title">
+            <h2>Kenapa Memilih kita</h2>
+            <p>Our commitment to excellence makes us stand out</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Worldwide Coverage</h3>
+                <p>We offer tours to over 100 countries across all continents</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>100% Secure Booking</h3>
+                <p>Your payments and personal information are always safe</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>24/7 Support</h3>
+                <p>Our customer service team is always ready to help</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-tag"></i>
+                </div>
+                <h3>Best Price Guarantee</h3>
+                <p>Find a lower price and we'll match it, guaranteed</p>
+            </div>
+        </div>
+    </div>
+</div>
