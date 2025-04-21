@@ -70,7 +70,7 @@ img {
   color: #ff7e00;
 }
 
-/* STYLE HEADER */
+/* Style Header */
 header {
   background-color: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -123,7 +123,8 @@ nav ul li a.active::after {
 }
 
 
-/* STYLE FOOTER */
+
+/* Style Footer */
 footer {
   background-color: #222;
   color: #fff;
@@ -210,25 +211,21 @@ footer {
 }
 
 /* Additional pages styling */
-
-@media (max-width: 768px) {
-  header .container {
-      flex-direction: column;
-      padding: 15px;
+@keyframes slide {
+  0%, 33% {
+      transform: translateX(0%);
   }
-  
-  .logo {
-    margin-bottom: 15px;
+  33.01%, 66% {
+      transform: translateX(-33.33%);
   }
-  nav ul {
-      justify-content: center;
-      margin-bottom: 15px;
+  66.01%, 99.99% {
+      transform: translateX(-66.66%);
   }
-  
-  nav ul li {
-      margin: 0 10px;
+  100% {
+      transform: translateX(0%);
   }
 }
+
 
 
 
@@ -240,9 +237,4 @@ footer {
   nav ul li {
       margin: 5px 10px;
   }
-  
-
-  .section-title h2 {
-      font-size: 28px;
-  }
-}
+} 

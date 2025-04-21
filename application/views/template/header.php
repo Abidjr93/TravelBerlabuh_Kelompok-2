@@ -15,7 +15,7 @@
 <header>
         <div class="container">
             <div class="logo">
-                <a href="index.php">Berlabuh Tripp and Travel</a>
+                <a href="index.php">Berlabuh Trip and Travel</a>
             </div>
             <nav>
                 <ul>

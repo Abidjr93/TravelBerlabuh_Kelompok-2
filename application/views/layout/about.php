@@ -1,1 +1,0 @@
-<p>ABOUT US</p>
