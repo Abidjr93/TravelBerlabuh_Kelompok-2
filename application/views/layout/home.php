@@ -16,79 +16,82 @@
     </div>
     <div class="container-home-destination-card">
         <?php
-            $tours = [[
+        $tours = [
+            [
                 'id' => 1,
                 'title' => 'Gunung Bromo (Malang)',
                 'image' => 'bromo1.jpg',
                 'price' => 200.000,
-                ], [
+            ],
+            [
                 'id' => 2,
                 'title' => 'Kawah Ijen (Banyuwangi)',
                 'image' => 'Ijen1.jpg',
                 'price' => 300.000,
-                ], [
+            ],
+            [
                 'id' => 3,
                 'title' => 'Gunung Dieng (Wonosobo)',
                 'image' => 'Dieng1.jpg',
                 'price' => 500.000,
-                ],
-            ];
+            ],
+        ];
 
-            foreach ($tours as $tour) {
-                echo '<div class="home-destination-card">';
-                echo '<div class="home-destination-image">';
-                echo '<img src="assets/images/' . $tour['image'] . '" alt="' . $tour['title'] . '">';
-                echo '<div class="home-destination-price">' . $tour['price'] . '.000/People</div>';
-                echo '</div>';
-                echo '<div class="home-destination-content">';
-                echo '<h3>' . $tour['title'] . '</h3>';
-                echo '<div class="home-destination-meta">';
-                echo '</div>';
-                echo '<a href="destinasi-detail.php?id=' . $tour['id'] . '" class="btn-small">View Details</a>';
-                echo '</div>';
-                echo '</div>';
-            }
+        foreach ($tours as $tour) {
+            echo '<div class="home-destination-card">';
+            echo '<div class="home-destination-image">';
+            echo '<img src="assets/images/' . $tour['image'] . '" alt="' . $tour['title'] . '">';
+            echo '<div class="home-destination-price">' . $tour['price'] . '.000/People</div>';
+            echo '</div>';
+            echo '<div class="home-destination-content">';
+            echo '<h3>' . $tour['title'] . '</h3>';
+            echo '<div class="home-destination-meta">';
+            echo '</div>';
+            echo '<a href="destinasi-detail.php?id=' . $tour['id'] . '" class="btn-small">View Details</a>';
+            echo '</div>';
+            echo '</div>';
+        }
         ?>
     </div>
     <div class="home-destination-button">
-        <a href="destinasi.php" class="btn">View All Destinations</a>
+        <a href="<?= base_url('Tours#Daftar_Paket') ?>"class="btn">Lihat Paket Lainnya</a>
     </div>
 </div>
 
 <div class="container">
-        <div class="section-title">
-            <h2>Kenapa Memilih kita</h2>
-            <p>Our commitment to excellence makes us stand out</p>
+    <div class="section-title">
+        <h2>Kenapa Harus Memilih Kami?</h2>
+        <p>Inilooh Benefitnyaa</p>
+    </div>
+    <div class="features-grid">
+        <div class="feature">
+            <div class="feature-icon">
+                <i class="fas fa-globe"></i>
+            </div>
+            <h3>Destinasi Terbaik</h3>
+            <p>Kami menawarkan anda destinasi terpopuler dan terbaik di Indonesia</p>
         </div>
-        <div class="features-grid">
-            <div class="feature">
-                <div class="feature-icon">
-                    <i class="fas fa-globe"></i>
-                </div>
-                <h3>Worldwide Coverage</h3>
-                <p>We offer tours to over 100 countries across all continents</p>
+        <div class="feature">
+            <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
             </div>
-            <div class="feature">
-                <div class="feature-icon">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <h3>100% Secure Booking</h3>
-                <p>Your payments and personal information are always safe</p>
+            <h3>Pemesanan Aman</h3>
+            <p>Data pribadi dan metode pembayaran anda aman dan dijamin oleh CS kami</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">
+                <i class="fas fa-headset"></i>
             </div>
-            <div class="feature">
-                <div class="feature-icon">
-                    <i class="fas fa-headset"></i>
-                </div>
-                <h3>24/7 Support</h3>
-                <p>Our customer service team is always ready to help</p>
+            <h3>Pelayanan 24 Jam</h3>
+            <p>Customer Service kami siap kapanpun anda butuh (kecuali hari kiamat)</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">
+                <i class="fas fa-tag"></i>
             </div>
-            <div class="feature">
-                <div class="feature-icon">
-                    <i class="fas fa-tag"></i>
-                </div>
-                <h3>Best Price Guarantee</h3>
-                <p>Find a lower price and we'll match it, guaranteed</p>
-            </div>
+            <h3>Harga Terbaik</h3>
+            <p>Kami menjamin harga paling terjangkau untuk anda</p>
         </div>
     </div>
+</div>
 </div>
