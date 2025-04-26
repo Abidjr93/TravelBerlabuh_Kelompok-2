@@ -58,35 +58,34 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="section-title">
-        <h2>Kenapa Harus Memilih Kami?</h2>
-        <p>Inilooh Benefitnyaa</p>
+<div class="container-home-why">
+    <div class="container-home-why-header">
+        <h2>Kenapa Harus Memilih Berlabuh Travel?</h2>
     </div>
-    <div class="features-grid">
-        <div class="feature">
-            <div class="feature-icon">
+    <div class="container-home-why-card">
+        <div class="why-feature">
+            <div class="why-feature-icon">
                 <i class="fas fa-globe"></i>
             </div>
             <h3>Destinasi Terbaik</h3>
             <p>Kami menawarkan anda destinasi terpopuler dan terbaik di Indonesia</p>
         </div>
-        <div class="feature">
-            <div class="feature-icon">
+        <div class="why-feature">
+            <div class="why-feature-icon">
                 <i class="fas fa-shield-alt"></i>
             </div>
             <h3>Pemesanan Aman</h3>
             <p>Data pribadi dan metode pembayaran anda aman dan dijamin oleh CS kami</p>
         </div>
-        <div class="feature">
-            <div class="feature-icon">
+        <div class="why-feature">
+            <div class="why-feature-icon">
                 <i class="fas fa-headset"></i>
             </div>
             <h3>Pelayanan 24 Jam</h3>
             <p>Customer Service kami siap kapanpun anda butuh (kecuali hari kiamat)</p>
         </div>
-        <div class="feature">
-            <div class="feature-icon">
+        <div class="why-feature">
+            <div class="why-feature-icon">
                 <i class="fas fa-tag"></i>
             </div>
             <h3>Harga Terbaik</h3>
@@ -94,4 +93,20 @@
         </div>
     </div>
 </div>
+
+<div class="stats">
+  <div class="stat">
+    <div class="label">DESTINATIONS</div>
+    <div class="number" data-target="<?= $destinations ?>">0</div>
+  </div>
+  <div class="stat">
+    <div class="label">PEOPLE SERVED</div>
+    <div class="number" data-target="<?= $people ?>">0</div>
+  </div>
+  <div class="stat">
+    <div class="label">YEARS ACTIVE</div>
+    <div class="number" data-target="<?= $years ?>">0</div>
+  </div>
 </div>
+
+<script src="<?= base_url('assets/counter.js') ?>"></script>

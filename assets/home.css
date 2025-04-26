@@ -66,15 +66,12 @@
 .container-home-destination-head {
     text-align: center;
     margin-bottom: 50px;
-}
-
-.container-home-destination-head h2 {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     margin-bottom: 15px;
     color: #333;
     position: relative;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 
 .container-home-destination-head h2:after {
@@ -83,9 +80,10 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
+    width: 200px;
     height: 3px;
     background-color: #4a90e2;
+    margin-bottom: 10px;
 }
 
 .container-home-destination-card { 
@@ -162,3 +160,125 @@
     text-align: center;
 }
 /*end Popular destination*/
+
+/*Start Why*/
+.container-home-why {
+    padding: 70px 0;
+  }
+
+.container-home-why-header {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    position: relative;
+    padding-bottom: 15px;
+  }
+
+.container-home-why-header h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 3px;
+    background-color: #4a90e2;;
+  }
+  
+.container-home-why-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
+    gap: 30px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+.why-feature {
+    text-align: center;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    width: 250px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+  }
+  
+.why-feature:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
+  
+.why-feature-icon {
+    font-size: 40px;
+    color: #4a90e2;
+    margin-bottom: 20px;
+  }
+  
+.why-feature h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+.why-feature p {
+    color: #777;
+  }
+/*end Why*/
+
+/*Start Statistik*/
+/* wrapper */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 1rem;
+    background: #f4f7fa;
+  }
+  
+  /* tiap kartu */
+
+.stats {
+    background-color: #4a90e2;
+}
+  .stat {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* angka besar di belakang */
+  .stat .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10rem;                  /* besarkan font */
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.247);   /* semi-transparan */
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  /* label di depan angka */
+  .stat .label {
+    position: relative;
+    z-index: 2;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+    padding: 0 .5rem;
+  }
+  
+
+/*End Statistik*/
+  
