@@ -1,13 +1,18 @@
 <?php
 
-class Home extends CI_Controller
-{
+class Home extends CI_Controller {
   public function index()
   {
-    $data['judul'] = 'Halaman Home';
-    $data['page_aktif'] = 'home';
+    $data = [
+      'judul'        => 'Halaman Home',
+      'page_aktif'   => 'home',
+      'destinations' => 7,      // ➡ nilai akhir Destinations
+      'people'       => 1593,   // ➡ nilai akhir People Served
+      'years'        => 3       // ➡ nilai akhir Years Active
+    ];
     $this->load->view('template/header', $data);
-    $this->load->view('layout/home');
+    // jangan lupa passing $data ke view berikutnya juga:
+    $this->load->view('layout/home', $data);
     $this->load->view('template/footer');
   }
 }
