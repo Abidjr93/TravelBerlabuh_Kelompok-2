@@ -1,0 +1,48 @@
+/* Reset dan Styling Dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff; /* Warna putih */
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Layout utama dua kolom */
+
+
+/* Variabel warna */
+:root {
+  --primary-color: #5770ff;
+  --secondary-color: #5770ff;
+  --text-color: #5770ff;
+  --light-gray:  #fff; 
+  --border-color: #5770ff;
+  --white: #fff;
+  --hover-color: #465ecc;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .tour-content {
+    flex-direction: column;
+  }
+
+  .highlight-column {
+    min-width: 100%;
+  }
+
+  .booking-sidebar {
+    margin-top: 20px;
+  }
+}

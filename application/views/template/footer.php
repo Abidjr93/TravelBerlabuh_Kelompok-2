@@ -1,4 +1,3 @@
-
 <footer class="footer">
     <div class="footer-content container">
         <div class="footer-section">
@@ -18,8 +17,9 @@
             <div class="divider"></div>
             <ul class="footer-links">
                 <li><a href="<?= base_url('home') ?>">Home</a></li>
-                <li><a href="<?= base_url('Tours') ?>" >Destinasi</a></li>
-                <li><a href="<?= base_url('about') ?>" >About Us</a></li>
+                <li><a href="<?= base_url('Tours') ?>">Destinasi</a></li>
+                <li><a href="<?= base_url('about') ?>">About Us</a></li>
+                <li><a href="<?= base_url('dashboard') ?>">Dashboard</a></li>
             </ul>
         </div>
 
@@ -64,45 +64,45 @@
         </div>
     </div>
 </footer>
-    <script>
-        // Add scrolled class to header when scrolling
-        document.addEventListener('DOMContentLoaded', function() {
-            window.addEventListener('scroll', function() {
-                const header = document.querySelector('.header');
-                if (window.scrollY > 50) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            });
-            
-            // Mobile menu toggle
-            const mobileToggle = document.querySelector('.mobile-toggle');
-            const navMenu = document.querySelector('.nav-menu');
-            
-            if (mobileToggle) {
-                mobileToggle.addEventListener('click', function() {
-                    navMenu.classList.toggle('active');
-                });
-            }
-        });
-        // Reset button functionality
-        document.getElementById('reset-btn').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.location.href = '<?php echo site_url('tours'); ?>';
-        });
-        
-        // Form validation
-        document.getElementById('filter-form').addEventListener('submit', function(e) {
-            const minPrice = document.querySelector('input[name="min_price"]').value;
-            const maxPrice = document.querySelector('input[name="max_price"]').value;
-            
-            if (minPrice && maxPrice && parseInt(minPrice) > parseInt(maxPrice)) {
-                e.preventDefault();
-                alert('Minimum price cannot be greater than maximum price');
+<script>
+    // Add scrolled class to header when scrolling
+    document.addEventListener('DOMContentLoaded', function() {
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
             }
         });
 
-    </script>
-    </body>
-    </html>
+        // Mobile menu toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+        }
+    });
+    // Reset button functionality
+    document.getElementById('reset-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = '<?php echo site_url('tours'); ?>';
+    });
+
+    // Form validation
+    document.getElementById('filter-form').addEventListener('submit', function(e) {
+        const minPrice = document.querySelector('input[name="min_price"]').value;
+        const maxPrice = document.querySelector('input[name="max_price"]').value;
+
+        if (minPrice && maxPrice && parseInt(minPrice) > parseInt(maxPrice)) {
+            e.preventDefault();
+            alert('Minimum price cannot be greater than maximum price');
+        }
+    });
+</script>
+</body>
+
+</html>
