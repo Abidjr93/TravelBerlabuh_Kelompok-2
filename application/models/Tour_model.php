@@ -10,6 +10,17 @@ class Tour_model extends CI_Model
         $this->load->database();
     }
 
+
+    public function get_popular_tours($limit = 4)
+    {
+        $this->db->select('*');
+        $this->db->from('tour_packages');
+        $this->db->order_by('is_featured', 'DESC'); // Order by featured first
+        $this->db->limit($limit);
+
+        $query = $this->db->get();
+        return $query->result_array();
+    }
     /**
      * Get all unique destinations
      * 
