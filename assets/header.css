@@ -38,7 +38,7 @@ body {
 }
 
 .header.scrolled {
-    padding: 0.8rem 5%;
+    padding: 1.4rem 5%;
     background-color: rgba(255, 255, 255, 0.95);
 }
 
@@ -50,7 +50,7 @@ body {
 .social-icon {
     color: var(--primary-color);
     font-size: 1.2rem;
-    transition: all 0.3s ease;
+    transition: all 50s ease;
 }
 
 .social-icon:hover {
@@ -58,15 +58,25 @@ body {
     transform: translateY(-3px);
 }
 
-.logo {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--accent-color);
-    text-decoration: none;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+.logo-img {
+    max-width: 12%;
+    max-height: 12%;
+    height: auto;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* memberi jarak antar elemen */
+}
+
+
 
 .nav-menu {
     display: flex;
@@ -105,4 +115,63 @@ body {
     border-radius: 0;
 }
 
-/* Kode CSS lainnya */
+.garis-vertical {
+    border-left: 1px solid #333;
+    height: 30px;
+}
+
+.hamburger {
+    display: none;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 5%;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 999;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.mobile-menu.show {
+    display: flex;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .garis-vertical {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .logo-img {
+        max-width: 23%;
+    }
+
+    .header{
+        width: 100%;
+    }
+}
