@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="<?= ('assets/home.css') ?>" />
     <link rel="stylesheet" href="<?= ('assets/about.css') ?>" />
     <link rel="stylesheet" href="<?= ('assets/tours.css') ?>" />
-    <link rel="stylesheet" href="<?= ('assets/detail_pake.css') ?>" />
+    <link rel="stylesheet" href="<?= ('assets/detail_paket.css') ?>" />
 </head>
 
 <body>

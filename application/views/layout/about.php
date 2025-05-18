@@ -14,20 +14,23 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>Yuk Kenalan Sama Berlabuh</h2>
-                    <p>Kami menunjang kenyamanan dan kepuasan anda dalam berlibur, happy explore all!. Oiya travel ini
+                    <h2 class="h2">Yuk Kenalan Sama Berlabuh</h2>
+                    <div class="about-image-2">
+                        <img src="<?php echo base_url('assets/images/kita.jpg'); ?> ">
+                    </div>
+                    <p class="p">Kami menunjang kenyamanan dan kepuasan anda dalam berlibur, happy explore all!. Oiya travel ini
                         baru aja berdiri di tahun 2024, dengan lebih dari 3 destinasi pilihan favorit dan paket yang
                         terjangkau, kami mengakomodasi hari liburan anda mulai dari penjemputan hingga pulang</p>
-                    <p>Kami percaya, healing dan liburan adalah salah satu kebutuhan pasti dari setiap insan. Oleh
+                    <p class="p">Kami percaya, healing dan liburan adalah salah satu kebutuhan pasti dari setiap insan. Oleh
                         karenanya kami mengembangkan pelayanan dan akomodasi terbaik demi pelanggan kami, sesuai
                         namanya.. kami akan membantu anda dalam berlabuh menuju tempat anda berlibur dan istirahat.</p>
-                    <p>Dengan profesionalitas tim dan tour guide lokal kami, anda akan mendapatkan pengalaman terbaik
+                    <p class="p">Dengan profesionalitas tim dan tour guide lokal kami, anda akan mendapatkan pengalaman terbaik
                         selama perjalanan. Kami jamin anda tidak akan menyesal untuk memilih layanan kami, oleh
                         karenanya kami berharap anda sebagai customer kami dapat membantu kami untuk terus bangkit dan
                         tumbuh menuju tak terbatas dan melampauinya.</p>
                     <p>Selamat liburan dan bersenang senang! .</p>
                 </div>
-                <div class="about-image">
+                <div class="about-image-1">
                     <img src="<?php echo base_url('assets/images/kita.jpg'); ?> ">
                 </div>
             </div>
@@ -78,7 +81,7 @@
                         ]
                     ],
                     [
-                        'name' => 'Adin Kenyal',
+                        'name' => 'Addin',
                         'position' => 'Admin & CS',
                         'photo' => 'adin.jpg',
                         'social' => [

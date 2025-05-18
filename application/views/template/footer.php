@@ -1,6 +1,10 @@
 <footer class="footer">
     <div class="footer-content container">
         <div class="footer-section">
+            <img src="assets/images/LogoBerlabuh.png" class="footer-logo-img">
+        </div>
+
+        <div class="footer-section">
             <h3>About Berlabuh</h3>
             <div class="divider"></div>
             <p>Berlabuh is a premier travel agency specializing in curated travel experiences around the world. We're dedicated to making your travel dreams come true.</p>
@@ -13,17 +17,6 @@
         </div>
 
         <div class="footer-section">
-            <h3>Quick Links</h3>
-            <div class="divider"></div>
-            <ul class="footer-links">
-                <li><a href="<?= base_url('home') ?>">Home</a></li>
-                <li><a href="<?= base_url('Tours') ?>">Destinasi</a></li>
-                <li><a href="<?= base_url('about') ?>">About Us</a></li>
-                <li><a href="<?= base_url('dashboard') ?>">Dashboard</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-section">
             <h3>Top Destinations</h3>
             <div class="divider"></div>
             <ul class="footer-links">
@@ -33,6 +26,16 @@
                 <li><a href="<?= base_url('Tours#Daftar_Paket') ?>">Raja Ampat</a></li>
             </ul>
         </div>
+
+        <!-- <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="divider"></div>
+            <ul class="footer-links">
+                <li><a href="<?= base_url('home') ?>">Home</a></li>
+                <li><a href="<?= base_url('Tours') ?>">Destinasi</a></li>
+                <li><a href="<?= base_url('about') ?>">About Us</a></li>
+            </ul>
+        </div> -->
 
         <div class="footer-section">
             <h3>Contact Info</h3>

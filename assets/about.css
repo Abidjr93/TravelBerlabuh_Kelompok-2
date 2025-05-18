@@ -31,7 +31,8 @@
   }
   
   .about-section {
-    padding: 70px 0;
+    padding: 20px;
+    margin-top: 20px;
   }
   
   .about-content {
@@ -48,8 +49,11 @@
   }
   
   .about-text p {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     color: #666;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
   }
   
   .about-image img {
@@ -58,7 +62,7 @@
   }
   
   .team-section {
-    padding: 70px 0;
+    padding: 20px 20px;
     background-color: #f5f5f5;
   }
   
@@ -234,3 +238,33 @@
 .feature p {
   color: #777;
 }
+
+.about-image-2{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-text h2 {
+    order: 1;
+  }
+
+  .about-image-1 {
+    display: none;
+  }
+
+  .about-image-2 {
+    text-align: center;
+    display: block;
+  }
+
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
