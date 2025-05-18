@@ -17,20 +17,42 @@
 
 <body>
     <header class="header">
-        <div class="social-icons">
-            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-        </div>
+        <img src="assets/images/LogoBerlabuhPanjang.png" class="logo-img">
 
-        <a href="<?= base_url() ?>" class="logo">Berlabuh Trip and Travel</a>
+        <nav class="navbar">
+            <div class="nav-content">
+                <div class="nav-menu desktop-menu">
+                    <a href="<?= base_url('home') ?>" class="nav-link <?= ($page_aktif == 'home') ? 'active' : '' ?>">Home</a>
+                    <a href="<?= base_url('Tours') ?>" class="nav-link <?= ($page_aktif == 'Tours') ? 'active' : '' ?>">Destinasi</a>
+                    <a href="<?= base_url('about') ?>" class="nav-link <?= ($page_aktif == 'about') ? 'active' : '' ?>">About Us</a>
+                </div>
 
-        <nav>
-            <div class="nav-menu">
-                <a href="<?= base_url('home') ?>" class="nav-link <?= ($page_aktif == 'home') ? 'active' : '' ?>">Home</a>
-                <a href="<?= base_url('Tours') ?>" class="nav-link <?= ($page_aktif == 'Tours') ? 'active' : '' ?>">Destinasi</a>
-                <a href="<?= base_url('about') ?>" class="nav-link <?= ($page_aktif == 'about') ? 'active' : '' ?>">About Us</a>
+                <div class="garis-vertical"></div>
+
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/berlabuh.malang/?hl=id" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="hamburger" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
             </div>
         </nav>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="<?= base_url('home') ?>" class="nav-link">Home</a>
+            <a href="<?= base_url('Tours') ?>" class="nav-link">Destinasi</a>
+            <a href="<?= base_url('about') ?>" class="nav-link">About Us</a>
+        </div>
     </header>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("show");
+        }
+    </script>
+
+</body>
