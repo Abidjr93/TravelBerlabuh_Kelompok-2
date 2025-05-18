@@ -1,11 +1,10 @@
     <!-- Page Header -->
-    <section class="page-header">
+    <section class="hero">
         <div class="container">
-            <h1>Tentang Kami</h1>
-            <div class="breadcrumbs">
-                <a href="index.php">Home</a>
-                <span>/</span>
-                <span>About</span>
+            <div class="hero-content">
+                <h1>Tentang Kami</h1>
+                <p>Explore amazing destinations with our curated travel experiences</p>
+                <a href="<?= base_url('Tours#Daftar_Paket') ?>" class="btn">Lihat Paket</a>
             </div>
         </div>
     </section>
@@ -75,7 +74,7 @@
                             'facebook' => 'https://www.instagram.com/harfu_alam/',
                             'twitter' => 'https://www.instagram.com/harfu_alam/',
                             'instagram' => 'https://www.instagram.com/harfu_alam/',
-                            
+
                         ]
                     ],
                     [
@@ -86,12 +85,12 @@
                             'facebook' => 'https://www.instagram.com/addiengm/',
                             'twitter' => 'https://www.instagram.com/addiengm/',
                             'instagram' => 'https://www.instagram.com/addiengm/',
-                            
+
                         ]
                     ]
                 ];
 
-    
+
 
                 foreach ($team as $member) {
                     echo '<div class="team-member">';
@@ -103,7 +102,7 @@
                     echo '<p>' . $member['position'] . '</p>';
                     echo '<div class="team-social">';
                     foreach ($member['social'] as $platform => $link) {
-                    echo '<a href="' . $link . '"><i class="fab fa-' . $platform . '"></i></a>';
+                        echo '<a href="' . $link . '"><i class="fab fa-' . $platform . '"></i></a>';
                     }
                     echo '</div>';
                     echo '</div>';
