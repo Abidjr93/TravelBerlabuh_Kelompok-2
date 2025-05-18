@@ -7,7 +7,7 @@
         <div class="footer-section">
             <h3>About Berlabuh</h3>
             <div class="divider"></div>
-            <p>Berlabuh is a premier travel agency specializing in curated travel experiences around the world. We're dedicated to making your travel dreams come true.</p>
+            <p>Didirikan pada 2024, kami hadir untuk menunjang kenyamanan liburan Anda dengan layanan profesional, destinasi favorit, dan paket terjangkau, mulai dari penjemputan hingga kembali pulang. Kami percaya liburan adalah kebutuhan, dan siap mengantar Anda berlabuh ke pengalaman tak terlupakan.</p>
             <div class="footer-social">
                 <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
@@ -26,16 +26,6 @@
                 <li><a href="<?= base_url('Tours#Daftar_Paket') ?>">Raja Ampat</a></li>
             </ul>
         </div>
-
-        <!-- <div class="footer-section">
-            <h3>Quick Links</h3>
-            <div class="divider"></div>
-            <ul class="footer-links">
-                <li><a href="<?= base_url('home') ?>">Home</a></li>
-                <li><a href="<?= base_url('Tours') ?>">Destinasi</a></li>
-                <li><a href="<?= base_url('about') ?>">About Us</a></li>
-            </ul>
-        </div> -->
 
         <div class="footer-section">
             <h3>Contact Info</h3>
