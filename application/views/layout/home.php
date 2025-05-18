@@ -82,4 +82,44 @@
         </div>
     </div>
 </div>
+
+<div class="testimoni">
+  <input type="radio" name="slider" id="slide1" checked>
+  <input type="radio" name="slider" id="slide2">
+  <input type="radio" name="slider" id="slide3">
+
+  <div class="slides">
+    <div class="testimonial-slide s1">
+      <img src="https://i.pravatar.cc/80?img=1" alt="User 1" class="testimonial-image">
+      <div class="testimonial-content">
+        <p>"Saya sangat puas dengan pelayanan dari travel ini. Dari awal pemesanan hingga akhir perjalanan semuanya terasa profesional dan nyaman. Pemandu wisatanya sangat informatif dan ramah, selalu siap membantu dan menjawab pertanyaan kami. Momen melihat matahari terbit dari Penanjakan benar-benar magis, membuat saya terharu. Ini adalah salah satu liburan terbaik saya sejauh ini!"</p>
+        <div class="testimonial-author">Dina Puspitasari</div>
+        <div class="testimonial-role">Traveler</div>
+      </div>
+    </div>
+
+    <div class="testimonial-slide s2">
+      <img src="https://i.pravatar.cc/80?img=2" alt="User 2" class="testimonial-image">
+      <div class="testimonial-content">
+        <p>"Sebagai seorang fotografer, saya mencari paket wisata yang tidak hanya nyaman, tapi juga bisa memberi akses terbaik ke spot-spot foto di Bromo. Travel ini benar-benar memenuhi ekspektasi saya. Jeep-nya sangat bersih dan sopirnya tahu banyak spot tersembunyi yang tidak terlalu ramai. Saya berhasil mendapatkan banyak hasil foto yang memuaskan, terutama saat kabut pagi menyelimuti lautan pasir. Recommended banget!"</p>
+        <div class="testimonial-author">Andi Pratama</div>
+        <div class="testimonial-role">Blogger</div>
+      </div>
+    </div>
+
+    <div class="testimonial-slide s3">
+      <img src="https://i.pravatar.cc/80?img=3" alt="User 3" class="testimonial-image">
+      <div class="testimonial-content">
+        <p>"Awalnya saya ragu ikut trip ini sendirian, tapi ternyata semua berjalan lancar dan menyenangkan. Saya bertemu dengan banyak teman baru, dan kru travel-nya sangat membantu dan perhatian. Semuanya sudah disiapkan dengan baik mulai dari transportasi, makan, hingga tiket masuk. Saya tidak perlu repot mengurus apa pun. Perjalanan ke Kawah Bromo dan Bukit Teletubbies jadi kenangan yang sulit dilupakan. Pasti ikut lagi kalau ke Bromo!"</p>
+        <div class="testimonial-author">Rudi Hartono</div>
+        <div class="testimonial-role">Fotografer Freelance</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider-nav">
+    <label for="slide1"></label>
+    <label for="slide2"></label>
+    <label for="slide3"></label>
+  </div>
 </div>
