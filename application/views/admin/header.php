@@ -35,88 +35,14 @@
       color: var(--text-color);
     }
 
-    .header {
-      position: sticky;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 1.2rem 5%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
-      background-color: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(10px);
-      box-shadow: 0 2px 10px var(--shadow-color);
-    }
-
-    .header.scrolled {
-      padding: 0.8rem 5%;
-      background-color: rgba(255, 255, 255, 0.95);
-    }
-
-    .social-icons {
-      display: flex;
-      gap: 1.2rem;
-    }
-
-    .social-icon {
-      color: var(--primary-color);
-      font-size: 1.2rem;
-      transition: all 0.3s ease;
-    }
-
-    .social-icon:hover {
-      color: var(--accent-color);
-      transform: translateY(-3px);
-    }
-
-    .logo {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--accent-color);
-      text-decoration: none;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
+    .header{
+      text-align: center;
+      font-size: 36px;
     }
 
     .nav-menu {
       display: flex;
       gap: 2rem;
-    }
-
-    .nav-link {
-      color: var(--text-color);
-      text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      position: relative;
-      padding: 0.5rem 0;
-      transition: all 0.3s ease;
-    }
-
-    .nav-link:hover {
-      color: var(--primary-color);
-    }
-
-
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-      background-color: white;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .navbar .logo {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--primary-color);
-      text-decoration: none;
     }
 
     .main-content {
@@ -126,11 +52,19 @@
       padding: 0 20px;
     }
 
-    .dashboard-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 30px;
+    .btn-top {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      transition: background-color 0.3s ease;
     }
 
     .btn {
@@ -142,6 +76,7 @@
       border-radius: 4px;
       cursor: pointer;
       text-decoration: none;
+      margin-bottom: 40px;
       font-size: 14px;
       transition: background-color 0.3s ease;
     }
@@ -239,6 +174,9 @@
     .actions {
       display: flex;
       gap: 10px;
+      margin-top: 30%;
+      justify-items: center;
+      padding-bottom: 20px;
     }
 
     .checkbox-container {
@@ -251,27 +189,3 @@
     }
   </style>
 </head>
-
-<body>
-  <header class="header">
-    <div class="social-icons">
-      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-    </div>
-
-    <a href="<?= base_url() ?>" class="logo">Berlabuh Trip and Travel</a>
-
-    <nav>
-      <div class="nav-menu">
-        <a href="<?php echo base_url('dashboard/add'); ?>" class="btn">Tambah Paket</a>
-        <a href="<?php echo base_url('Tours#Daftar_Paket'); ?>" class="btn" target="_blank">Lihat Website</a>
-      </div>
-      <div>
-
-      </div>
-    </nav>
-  </header>
-
-  <div class="main-content">
