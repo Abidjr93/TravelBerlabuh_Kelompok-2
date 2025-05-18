@@ -15,46 +15,34 @@
         <h2>Popular Destinations</h2>
     </div>
     <div class="container-home-destination-card">
-        <?php
-        $tours = [
-            [
-                'id' => 1,
-                'title' => 'Gunung Bromo (Malang)',
-                'image' => 'bromo1.jpg',
-                'price' => 200.000,
-            ],
-            [
-                'id' => 2,
-                'title' => 'Kawah Ijen (Banyuwangi)',
-                'image' => 'Ijen1.jpg',
-                'price' => 300.000,
-            ],
-            [
-                'id' => 3,
-                'title' => 'Gunung Dieng (Wonosobo)',
-                'image' => 'Dieng1.jpg',
-                'price' => 500.000,
-            ],
-        ];
-
-        foreach ($tours as $tour) {
-            echo '<div class="home-destination-card">';
-            echo '<div class="home-destination-image">';
-            echo '<img src="assets/images/' . $tour['image'] . '" alt="' . $tour['title'] . '">';
-            echo '<div class="home-destination-price">' . $tour['price'] . '.000/People</div>';
-            echo '</div>';
-            echo '<div class="home-destination-content">';
-            echo '<h3>' . $tour['title'] . '</h3>';
-            echo '<div class="home-destination-meta">';
-            echo '</div>';
-            echo '<a href="destinasi-detail.php?id=' . $tour['id'] . '" class="btn-small">View Details</a>';
-            echo '</div>';
-            echo '</div>';
-        }
-        ?>
+        <?php if (!empty($popular_tours)): ?>
+            <?php foreach ($popular_tours as $tour): ?>
+                <div class="home-destination-card">
+                    <div class="home-destination-image">
+                        <img src="<?php echo base_url('assets/images/packages/' . $tour['image']); ?>" alt="<?php echo html_escape($tour['title']); ?>">
+                        <div class="home-destination-price">Rp.<?php echo number_format($tour['price']); ?>/Orang</div>
+                    </div>
+                    <div class="home-destination-content">
+                        <h3><?php echo html_escape($tour['title']); ?></h3>
+                        <div class="home-destination-meta">
+                            <div>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span><?php echo html_escape($tour['location']); ?></span>
+                            </div>
+                            <div>
+                                <i class="fas fa-calendar-days"></i>
+                                <span><?php echo html_escape($tour['duration']); ?> Hari</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <div class="no-tours-found">No tour packages available.</div>
+        <?php endif; ?>
     </div>
     <div class="home-destination-button">
-        <a href="<?= base_url('Tours#Daftar_Paket') ?>"class="btn">Lihat Paket Lainnya</a>
+        <a href="<?= base_url('Tours#Daftar_Paket') ?>" class="btn">Lihat Paket Lainnya</a>
     </div>
 </div>
 
