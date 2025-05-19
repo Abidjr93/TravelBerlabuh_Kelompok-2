@@ -31,7 +31,7 @@ class Tours extends CI_Controller
     $data['months'] = $this->Tour_model->get_all_months();
     $data['filters'] = $filters;
     $data['tours'] = $this->Tour_model->get_tour_packages($filters);
-    $data['judul'] = 'Halaman Paket';
+    $data['judul'] = 'Destinasi - Berlabuh Trip & Travel';
     $data['page_aktif'] = 'Tours';
 
     // Load view

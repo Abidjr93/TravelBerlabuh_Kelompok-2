@@ -34,7 +34,7 @@
                 <div class="garis-vertical"></div>
 
                 <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/share/1GAMnBKgZY/?mibextid=wwXIfr" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/berlabuh.malang/?hl=id" class="social-icon"><i
                             class="fab fa-instagram"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>

@@ -8,7 +8,7 @@ class Dashboard extends CI_Controller
   // Halaman utama dashboard
   public function index()
   {
-    $data['title'] = 'Dashboard - Berlabuh Trip and Travel';
+    $data['title'] = 'Dashboard - Berlabuh Trip & Travel';
     $data['packages'] = $this->Admin_model->get_all_packages();
 
     $this->load->view('admin/header', $data);
