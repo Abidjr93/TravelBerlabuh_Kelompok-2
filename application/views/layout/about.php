@@ -3,7 +3,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Tentang Kami</h1>
-                <p>Explore amazing destinations with our curated travel experiences</p>
+                <p>Beragam cerita yang membawa kami ke titik ini</p>
                 <a href="<?= base_url('Tours#Daftar_Paket') ?>" class="btn">Lihat Paket</a>
             </div>
         </div>
