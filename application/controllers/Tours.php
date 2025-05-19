@@ -10,12 +10,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Tours extends CI_Controller
 {
 
-  public function __construct()
-  {
-    parent::__construct();
-    $this->load->model('Tour_model');
-    $this->load->helper(['url', 'form']);
-  }
 
   /**
    * Index page for tour listings
