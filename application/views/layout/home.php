@@ -103,7 +103,7 @@
         </div>
 
         <div class="testimonial-slide s2">
-            <img style="https://i.pravatar.cc/80?img=2" alt="User 2" class="testimonial-image">
+            <img src="https://i.pravatar.cc/80?img=2" alt="User 2" class="testimonial-image">
             <div class="testimonial-content">
                 <p>"Sebagai seorang fotografer, saya mencari paket wisata yang tidak hanya nyaman, tapi juga bisa
                     memberi akses terbaik ke spot-spot foto di Bromo. Travel ini benar-benar memenuhi ekspektasi saya.
