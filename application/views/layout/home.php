@@ -91,7 +91,7 @@
 
     <div class="slides">
         <div class="testimonial-slide s1">
-            <img src="https://i.pravatar.cc/80?img=1" alt="User 1" class="testimonial-image">
+            <img src="<?php echo base_url('assets/images/TestimoniPr1.png'); ?>" alt="User 1" class="testimonial-image">
             <div class="testimonial-content">
                 <p>"Saya sangat puas dengan pelayanan dari travel ini. Dari awal pemesanan hingga akhir perjalanan
                     semuanya terasa profesional dan nyaman. Pemandu wisatanya sangat informatif dan ramah, selalu siap
@@ -103,7 +103,7 @@
         </div>
 
         <div class="testimonial-slide s2">
-            <img src="https://i.pravatar.cc/80?img=2" alt="User 2" class="testimonial-image">
+            <img src="<?php echo base_url('assets/images/TestimoniLaki2.png'); ?>" alt="User 2" class="testimonial-image">
             <div class="testimonial-content">
                 <p>"Sebagai seorang fotografer, saya mencari paket wisata yang tidak hanya nyaman, tapi juga bisa
                     memberi akses terbaik ke spot-spot foto di Bromo. Travel ini benar-benar memenuhi ekspektasi saya.
@@ -116,7 +116,7 @@
         </div>
 
         <div class="testimonial-slide s3">
-            <img src="https://i.pravatar.cc/80?img=3" alt="User 3" class="testimonial-image">
+            <img src="<?php echo base_url('assets/images/TestimoniLaki1.png'); ?>" alt="User 3" class="testimonial-image">
             <div class="testimonial-content">
                 <p>"Awalnya saya ragu ikut trip ini sendirian, tapi ternyata semua berjalan lancar dan menyenangkan.
                     Saya bertemu dengan banyak teman baru, dan kru travel-nya sangat membantu dan perhatian. Semuanya

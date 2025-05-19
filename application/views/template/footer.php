@@ -56,7 +56,7 @@
                 </li>
                 <li>
                     <i class="far fa-clock"></i>
-                    <span>Senin-Minggu: 7AM - 6PM</span>
+                    <span>Senin - Sabtu: 7:00 AM - 6:00 PM</span>
                 </li>
             </ul>
         </div>
