@@ -3,7 +3,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Tentang Kami</h1>
-                <p>Explore amazing destinations with our curated travel experiences</p>
+                <p>Berikut sedikit cerita kami hingga ada di titik ini</p>
                 <a href="<?= base_url('Tours#Daftar_Paket') ?>" class="btn">Lihat Paket</a>
             </div>
         </div>
@@ -18,13 +18,16 @@
                     <div class="about-image-2">
                         <img src="<?php echo base_url('assets/images/kita.jpg'); ?> ">
                     </div>
-                    <p class="p">Kami menunjang kenyamanan dan kepuasan anda dalam berlibur, happy explore all!. Oiya travel ini
+                    <p class="p">Kami menunjang kenyamanan dan kepuasan anda dalam berlibur, happy explore all!. Oiya
+                        travel ini
                         baru aja berdiri di tahun 2024, dengan lebih dari 3 destinasi pilihan favorit dan paket yang
                         terjangkau, kami mengakomodasi hari liburan anda mulai dari penjemputan hingga pulang</p>
-                    <p class="p">Kami percaya, healing dan liburan adalah salah satu kebutuhan pasti dari setiap insan. Oleh
+                    <p class="p">Kami percaya, healing dan liburan adalah salah satu kebutuhan pasti dari setiap insan.
+                        Oleh
                         karenanya kami mengembangkan pelayanan dan akomodasi terbaik demi pelanggan kami, sesuai
                         namanya.. kami akan membantu anda dalam berlabuh menuju tempat anda berlibur dan istirahat.</p>
-                    <p class="p">Dengan profesionalitas tim dan tour guide lokal kami, anda akan mendapatkan pengalaman terbaik
+                    <p class="p">Dengan profesionalitas tim dan tour guide lokal kami, anda akan mendapatkan pengalaman
+                        terbaik
                         selama perjalanan. Kami jamin anda tidak akan menyesal untuk memilih layanan kami, oleh
                         karenanya kami berharap anda sebagai customer kami dapat membantu kami untuk terus bangkit dan
                         tumbuh menuju tak terbatas dan melampauinya.</p>
