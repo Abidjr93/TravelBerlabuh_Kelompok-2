@@ -10,7 +10,7 @@ class Tour_model extends CI_Model
         $this->load->database();
     }
 
-
+    /*Untuk menampilkan 4 Destinasi Populer di Home*/
     public function get_popular_tours($limit = 4)
     {
         $this->db->select('*');

@@ -3,19 +3,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Dashboard extends CI_Controller
 {
-  public function __construct()
-  {
-    parent::__construct();
-    $this->load->model('admin_model');
-    $this->load->helper(['url', 'form']);
-    $this->load->library(['form_validation', 'session', 'upload']);
-  }
+
 
   // Halaman utama dashboard
   public function index()
   {
     $data['title'] = 'Dashboard - Berlabuh Trip and Travel';
-    $data['packages'] = $this->admin_model->get_all_packages();
+    $data['packages'] = $this->Admin_model->get_all_packages();
 
     $this->load->view('admin/header', $data);
     $this->load->view('admin/dashboard', $data);
@@ -76,7 +70,7 @@ class Dashboard extends CI_Controller
         }
       }
 
-      $result = $this->admin_model->add_package($package_data);
+      $result = $this->Admin_model->add_package($package_data);
 
       if ($result) {
         $this->session->set_flashdata('success', 'Paket tour berhasil ditambahkan');
@@ -92,7 +86,7 @@ class Dashboard extends CI_Controller
   public function edit($id)
   {
     $data['title'] = 'Edit Paket - Berlabuh Trip and Travel';
-    $data['package'] = $this->admin_model->get_package_by_id($id);
+    $data['package'] = $this->Admin_model->get_package_by_id($id);
 
     if (empty($data['package'])) {
       $this->session->set_flashdata('error', 'Paket tour tidak ditemukan');
@@ -155,7 +149,7 @@ class Dashboard extends CI_Controller
         }
       }
 
-      $result = $this->admin_model->update_package($id, $package_data);
+      $result = $this->Admin_model->update_package($id, $package_data);
 
       if ($result) {
         $this->session->set_flashdata('success', 'Paket tour berhasil diupdate');
@@ -170,7 +164,7 @@ class Dashboard extends CI_Controller
   // Fungsi untuk menghapus paket
   public function delete($id)
   {
-    $package = $this->admin_model->get_package_by_id($id);
+    $package = $this->Admin_model->get_package_by_id($id);
 
     if (empty($package)) {
       $this->session->set_flashdata('error', 'Paket tour tidak ditemukan');
@@ -183,7 +177,7 @@ class Dashboard extends CI_Controller
         }
       }
 
-      $result = $this->admin_model->delete_package($id);
+      $result = $this->Admin_model->delete_package($id);
 
       if ($result) {
         $this->session->set_flashdata('success', 'Paket tour berhasil dihapus');
